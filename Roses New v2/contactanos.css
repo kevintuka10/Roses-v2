@@ -1,0 +1,198 @@
+
+
+@font-face {
+    font-family: 'BarlowBold';
+    src: url(assets/fonts/Barlow-Bold.ttf);
+}
+
+
+@font-face {
+    font-family: 'OttoAttackType';
+    src: url(assets/fonts/OTTOATTACTYPE.ttf);
+}
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: BarlowBold;
+    min-height: 100vh;
+    text-align: center;
+    place-items: center;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header{
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    min-width: 250px;
+}
+
+
+.main {
+    width: 100%;
+    background: #FFB7C5;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+@media screen and (min-width=800px){
+    .main {
+        height: 150vh;
+    }
+}
+
+.logo {
+    color: #000;
+    height: 60px;
+    font-size: 45px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-align: center;
+    float: left;
+    font-weight: 900;
+    text-decoration: none;
+    font-family: 'OttoAttackType';
+    border: 3px outset #262626;
+    border-radius: 15px;
+}
+
+nav {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #262626;
+}
+
+nav ul li a:hover
+{
+    background: #FFB7C5;
+    color: #fff;
+    transition: 0.5s;
+}
+
+@media (max-width: 1200px)
+{
+    header
+    {
+        margin: 0px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .menu-toggle
+    {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        background: #ccc;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        color: #FFB7C5;
+
+    }
+    .menu-toggle::before
+    {
+        content: "\f0c9";
+        font-family: fontAwesome;
+        line-height: 40px;
+    }
+    .menu-toggle.active::before
+    {
+        content: "\f00d";
+    }
+    nav
+    {
+        display: none;
+    }
+    nav.active
+    {
+        display: block;
+        width: 100%;
+    }
+    nav.active ul
+    {
+        display: block;
+    }
+    nav.active ul li
+    {
+        margin: 0;
+    }
+}
+
+
+
+.contactos a{
+    display: inline-block;
+    text-decoration: none;
+    width: 15vw;
+    height: 15vw;
+    line-height: 15vw;
+    color: #fff;
+    margin-right: 5vw;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: 100px;
+    font-size: 8vw;
+    position: relative;
+    top: 10vw;
+}
+
+.contactos a:hover {
+    color: #FFB7C5;
+}
+
+.texto h1 {
+    font-size: 6vw;
+    position: relative;
+    right: 1%;
+}
+
+@media screen and (max-width=800px){
+    .contactos a {
+        position: relative;
+        width: 100px;
+        height: 100px;
+    }
+
+    .body {
+        height: 120vh;
+    }
+}
+
