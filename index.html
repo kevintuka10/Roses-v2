@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=400, initial-scale=2.0">
+    <title>Roses</title>
+    <link rel="stylesheet" href="styles.css"
+    >
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+    <div class="main">
+    <header>
+        <a href="#" class="logo">Roses</a>
+        <div class="menu-toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="#">Catalogo</a></li>
+                <li><a href="contactanos.html">Contactanos</a></li>
+                <li><a href ="sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="#">FeedBack</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+
+
+    <div class="content">
+        <h1>Bienvenido a <br><span>Roses</span><br></h1>
+        <p class="par">La tienda de ropa perfecta para Ti</p>
+    </div>
+
+    <div class="indicator"></div>
+
+
+
+    <div class="letters">
+        <h1>Tenemos <span class="auto-type"></span></h1>
+    </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Remeras", "Buzos", "Paltalones", "Jeans"],
+            typeSpeed: 120,
+            backSpeed: 80,
+            loop: true
+        })
+
+    </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".menu-toggle").click(function(){
+                $(".menu-toggle").toggleClass("active")
+                $("nav").toggleClass("active")
+            })
+        })
+    </script>
+
+</body>
+</html>
